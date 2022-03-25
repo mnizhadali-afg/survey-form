@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FCC Project | Survey Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+    <section id="container">
+      <form action="" id="survey-form">
+        <fieldset class="text-based">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" placeholder="Full Name" required />
+          <label for="email" id="email-label">Email</label>
+          <input type="email" name="email" placeholder="Email" id="email" required />
+          <label for="age" id="number-label">Age <span class="label-text">(optional)</span></label>
+          <input type="number" name="age" placeholder="Age" id="number" min="10" max="100" />
+          <label for="dropdown">Which option best describes your current role?</label>
+
+          <select name="dropdown" id="dropdown">
+            <option value="">Select an Option</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="not-say">Prefer to Not Say</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label>Would you recommend freeCodeCamp to a friend?</label>
+          <label for="definitly">
+            <input type="radio" name="recommendation" value="def" id="definitly" />
+            Definitly
+          </label>
+          <label for="maybe">
+            <input type="radio" name="recommendation" value="maybe" id="maybe" />
+            Maybe
+          </label>
+          <label for="not-sure">
+            <input type="radio" name="recommendation" value="not-sure" id="not-sure" />
+            Not Sure
+          </label>
+        </fieldset>
+        <fieldset class="dropdown-menu">
+          <label for="dropdown">Which option best describes your current role?</label>
+          <select name="dropdown" id="dropdown">
+            <option value="">Select an Option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+          </select>
+        </fieldset>
+        <fieldset id="rest-form">
+          <label>What would you like to see improved?<span class="label-text"> (Check all that apply)</span></label>
+          <label for="be-projects" class="ci">
+            <input type="checkbox" name="be-projects" id="be-projects" value="improvement" />
+            Back-end Projects
+          </label>
+          <label for="dv" class="ci">
+            <input type="checkbox" name="data-visualization" id="dv" value="improvement" />
+            Data Visualization
+          </label>
+          <label for="challenges" class="ci">
+            <input type="checkbox" name="challenges" id="challenges" value="improvement" />
+            Challenges
+          </label>
+          <label for="community" class="ci">
+            <input type="checkbox" name="community" id="community" value="improvement" />
+            Open Source Community
+          </label>
+          <label for="gitter" class="ci">
+            <input type="checkbox" name="gitter" id="gitter" value="improvement" />
+            Gitter help rooms
+          </label>
+          <label for="videos" class="ci">
+            <input type="checkbox" name="videos" id="videos" value="improvement" />
+            Videos
+          </label>
+          <label for="meetups" class="ci">
+            <input type="checkbox" name="meetups" id="meetups" value="improvement" />
+            City Meetups
+          </label>
+          <label for="wiki" class="ci">
+            <input type="checkbox" name="wiki" id="wiki" value="improvement" />
+            Wiki
+          </label>
+          <label for="forum" class="ci">
+            <input type="checkbox" name="forum" id="forum" value="improvement" />
+            Forum
+          </label>
+          <label for="additional-courses" class="ci">
+            <input type="checkbox" name="additional-courses" id="additional-courses" value="improvement" />
+            Additional Courses
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="comments">Any comments or suggestions?</label>
+          <textarea name="comments" id="comments" cols="30" rows="6"
+            placeholder="Enter your comments here..."></textarea>
+          <button type="submit" name="submit" id="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
